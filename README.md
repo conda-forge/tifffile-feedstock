@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tifffile-feedstock.svg?
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/tifffile-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tifffile-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tifffile-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tifffile-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tifffile/badges/version.svg)](https://anaconda.org/conda-forge/tifffile)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tifffile/badges/downloads.svg)](https://anaconda.org/conda-forge/tifffile)
+
 
 Updating tifffile-feedstock
 ===========================
