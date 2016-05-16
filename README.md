@@ -5,7 +5,7 @@ Home: https://github.com/blink1073/tifffile
 
 Package license: BSD License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Read and write image data from and to TIFF files.
 
