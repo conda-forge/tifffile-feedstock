@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: tifffile
@@ -7,7 +7,7 @@ package:
 source:
   fn: tifffile-{{ version }}.tar.gz
   url: https://github.com/blink1073/tifffile/archive/v{{ version }}.tar.gz
-  sha256: 218f9c0640eff4d464c5619b1db57f049e92ff6cd2360d146332577f0ec2f312
+  sha256: 8b3fdabd5368008250b3334711c43f575b7b481ab018b793a6f245ee822f40df
 
 build:
     number: 0
@@ -29,7 +29,9 @@ test:
 
 about:
   home: https://github.com/blink1073/tifffile
-  license:  BSD License
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE
   summary: 'Read and write image data from and to TIFF files.'
 
 extra:
