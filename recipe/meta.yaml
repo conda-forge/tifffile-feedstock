@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: tifffile
@@ -7,7 +7,7 @@ package:
 source:
   fn: tifffile-{{ version }}.tar.gz
   url: https://github.com/blink1073/tifffile/archive/v{{ version }}.tar.gz
-  sha256: 8b3fdabd5368008250b3334711c43f575b7b481ab018b793a6f245ee822f40df
+  sha256: b3dc2eac0c18dc5d0693e5a8dd9e3ec61fe4710f78603a45787111f613b2cee9
 
 build:
     number: 0
