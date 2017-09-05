@@ -5,23 +5,26 @@ package:
   version: {{ version }}
 
 source:
-  fn: tifffile-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/t/tifffile/tifffile-{{ version }}.tar.gz
   sha256: 802367effe86b0d1e64cb5c2ed886771f677fa63260b945e51a27acccdc08fa1
 
 build:
-    number: 0
+    number: 1
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.8.*  # [not (win and (py35 or py36))]
+    - numpy 1.9.*  # [win and py35]
+    - numpy 1.11.*  # [win and py36]
     - msinttypes  # [win and py<35]
   run:
     - python
-    - numpy x.x
+    - numpy >=1.8  # [not (win and (py35 or py36))]
+    - numpy >=1.9  # [win and py35]
+    - numpy >=1.11  # [win and py36]
 
 test:
   imports:
