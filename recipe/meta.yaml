@@ -29,6 +29,9 @@ requirements:
 test:
   imports:
     - tifffile
+  commands:
+    - conda inspect linkages -p $PREFIX tifffile  # [not win]
+    - conda inspect objects -p $PREFIX tifffile  # [osx]
 
 about:
   home: https://github.com/blink1073/tifffile
