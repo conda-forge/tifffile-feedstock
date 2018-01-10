@@ -1,4 +1,4 @@
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 package:
   name: tifffile
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tifffile/tifffile-{{ version }}.tar.gz
-  sha256: 802367effe86b0d1e64cb5c2ed886771f677fa63260b945e51a27acccdc08fa1
+  sha256: 3861d78a9676b50de4d9ba89d8f15cf04baf5781b222837f5d9a3593d5121de7
 
 build:
     number: 1
@@ -25,6 +25,8 @@ requirements:
     - numpy >=1.8  # [not (win and (py35 or py36))]
     - numpy >=1.9  # [win and py35]
     - numpy >=1.11  # [win and py36]
+    - futures  # [py27]
+    - enum34 # [py27]
 
 test:
   imports:
