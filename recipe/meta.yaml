@@ -9,7 +9,7 @@ source:
   sha256: bca0fc9eaf609a27ebd99d8466e05d5a6e79389957f17582b70643dbca65e3d8
 
 build:
-    number: 0
+    number: 1
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -25,6 +25,7 @@ requirements:
     - numpy >=1.8  # [not (win and (py35 or py36))]
     - numpy >=1.9  # [win and py35]
     - numpy >=1.11  # [win and py36]
+    - backports.lzma  # [py27]
     - futures  # [py27]
     - enum34  # [py27]
 
