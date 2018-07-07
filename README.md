@@ -14,14 +14,16 @@ Summary: Read and write image data from and to TIFF files.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tifffile-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tifffile-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tifffile-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tifffile-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tifffile-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tifffile-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/tifffile-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/tifffile-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/tifffile-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/tifffile-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/tifffile-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/tifffile-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tifffile/badges/version.svg)](https://anaconda.org/conda-forge/tifffile)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tifffile/badges/downloads.svg)](https://anaconda.org/conda-forge/tifffile)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tifffile-green.svg)](https://anaconda.org/conda-forge/tifffile) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tifffile.svg)](https://anaconda.org/conda-forge/tifffile) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tifffile.svg)](https://anaconda.org/conda-forge/tifffile) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tifffile.svg)](https://anaconda.org/conda-forge/tifffile) |
 
 Installing tifffile
 ===================
