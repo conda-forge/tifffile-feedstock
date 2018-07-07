@@ -28,6 +28,7 @@ requirements:
     - backports.lzma  # [py27]
     - futures  # [py27]
     - enum34  # [py27]
+    - pathlib # [py27]
 
 test:
   imports:
