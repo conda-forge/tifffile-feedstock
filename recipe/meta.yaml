@@ -1,4 +1,4 @@
-{% set version = "0.15.1" %}
+{% set version = "2018.11.6" %}
 
 package:
   name: tifffile
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tifffile/tifffile-{{ version }}.tar.gz
-  sha256: 1fbb2cfd57fd8e42e417bc29001a17f319701f1be00e0b8a0004a52da93f1b08
+  sha256: 66a2fa7223cfe96a9aafa88177a711964878c9a062876c52fcb044d63a4608a3
 
 build:
-    number: 1001
+    number: 1000
     script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
