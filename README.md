@@ -3,7 +3,7 @@ About tifffile
 
 Home: https://github.com/blink1073/tifffile
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
