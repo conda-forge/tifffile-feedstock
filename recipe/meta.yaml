@@ -9,8 +9,11 @@ source:
   sha256: 82c5c72de4dc19cc7011e4e8c45492e17121bd02cfa98c015ddd2a83e36f09bc
 
 build:
-    number: 0
-    script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  entry_points:
+    - tifffile = tifffile:main
+    - lsm2bin = tifffile.lsm2bin:main
 
 requirements:
   build:
@@ -23,7 +26,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - backports.lzma  # [py27]
+    - imagecodecs-lite >=2019.5.22  # [win]
     - futures  # [py27]
     - enum34  # [py27]
     - pathlib  # [py27]
@@ -34,7 +37,7 @@ test:
 
 about:
   home: https://github.com/blink1073/tifffile
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'Read and write image data from and to TIFF files.'
