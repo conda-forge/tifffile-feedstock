@@ -9,28 +9,25 @@ source:
   sha256: 82c5c72de4dc19cc7011e4e8c45492e17121bd02cfa98c015ddd2a83e36f09bc
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - tifffile = tifffile:main
     - lsm2bin = tifffile.lsm2bin:main
 
 requirements:
-  build:
-    - {{ compiler('c') }}
   host:
     - python
     - pip
-    - numpy
-    - msinttypes  # [win and py<35]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy >=1.11.3
     # require is actually imagecodecs >=2019.5.22, this is a workaround
-    - imagecodecs-lite >=2019.4.20  # [win]
+    - imagecodecs-lite >=2019.4.20
+    # remove selector when: https://github.com/conda-forge/futures-feedstock/pull/11
     - futures  # [py27]
-    - enum34  # [py27]
-    - pathlib  # [py27]
+    - enum34
+    - pathlib
 
 test:
   imports:
