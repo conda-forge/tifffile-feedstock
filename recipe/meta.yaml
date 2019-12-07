@@ -27,8 +27,7 @@ requirements:
     # remove selector when: https://github.com/conda-forge/futures-feedstock/pull/11
     - futures  # [py27]
     - enum34
-    # remove selector when: https://github.com/conda-forge/pathlib-feedstock/pull/6
-    - pathlib  # [py27]
+    - pathlib
 
 test:
   imports:
