@@ -10,24 +10,21 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - tifffile = tifffile:main
     - lsm2bin = tifffile.lsm2bin:main
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - numpy >=1.11.3
-    # require is actually imagecodecs >=2019.5.22, this is a workaround
+    - python >=3.6
+    - numpy >=1.15.1
+    # require is actually imagecodecs >=2020.1.31, this is a workaround
     - imagecodecs-lite >=2019.4.20
-    # remove selector when: https://github.com/conda-forge/futures-feedstock/pull/11
-    - futures  # [py27]
-    - enum34
-    - pathlib
 
 test:
   imports:
