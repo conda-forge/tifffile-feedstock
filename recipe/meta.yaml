@@ -1,4 +1,4 @@
-{% set version = "2020.2.16" %}
+{% set version = "2020.5.5" %}
 
 package:
   name: tifffile
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tifffile/tifffile-{{ version }}.tar.gz
-  sha256: f03b03c4863d232e746859ebdf36e3dfd974364d9944d884bc82b430b0d7290d
+  sha256: d1d88ce3e74ffa367754a580c40b73e65d4a5c8dc37d7862daaeb72502879fda
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tifffile = tifffile:main
     - lsm2bin = tifffile.lsm2bin:main
@@ -35,7 +35,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Read and write image data from and to TIFF files.'
+  summary: Read and write image data from and to TIFF files.
 
 extra:
   recipe-maintainers:
