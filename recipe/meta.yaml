@@ -1,4 +1,4 @@
-{% set version = "2020.5.11" %}
+{% set version = "2020.5.30" %}
 
 package:
   name: tifffile
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tifffile/tifffile-{{ version }}.tar.gz
-  sha256: abfce379f2b4b97759796c1489ea0e73c349fc71bf09bea2a5d076cbe7cfd4eb
+  sha256: e41fcb6c0e75e1f6b144dc5995aa2f33689bd3125873b5e5a762560a246909e1
 
 build:
   number: 0
