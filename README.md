@@ -117,6 +117,7 @@ Feedstock Maintainers
 =====================
 
 * [@blink1073](https://github.com/blink1073/)
+* [@ericpre](https://github.com/ericpre/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@stuarteberg](https://github.com/stuarteberg/)
