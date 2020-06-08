@@ -9,7 +9,7 @@ source:
   sha256: e79403a8b98b0df7ade8d43469151b959fd56239001471fac62beabca6f56377
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -23,8 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy >=1.15.1
-    # require is actually imagecodecs >=2020.1.31, this is a workaround
-    - imagecodecs-lite >=2019.4.20
+    - imagecodecs
 
 test:
   imports:
@@ -43,3 +42,4 @@ extra:
     - ocefpaf
     - jakirkham
     - stuarteberg
+    - ericpre
