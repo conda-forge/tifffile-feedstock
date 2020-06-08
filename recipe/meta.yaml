@@ -23,8 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy >=1.15.1
-    # require is actually imagecodecs >=2020.1.31, this is a workaround
-    - imagecodecs-lite >=2019.4.20
+    - imagecodecs
 
 test:
   imports:
