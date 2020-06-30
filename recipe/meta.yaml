@@ -1,15 +1,17 @@
+{% set name = "tifffile" %}
 {% set version = "2020.6.3" %}
+{% set sha256 = "e79403a8b98b0df7ade8d43469151b959fd56239001471fac62beabca6f56377" %}
 
 package:
-  name: tifffile
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/tifffile/tifffile-{{ version }}.tar.gz
-  sha256: e79403a8b98b0df7ade8d43469151b959fd56239001471fac62beabca6f56377
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -39,7 +41,8 @@ about:
 extra:
   recipe-maintainers:
     - blink1073
-    - ocefpaf
-    - jakirkham
-    - stuarteberg
     - ericpre
+    - jakirkham
+    - mrakitin
+    - ocefpaf
+    - stuarteberg
