@@ -1,6 +1,6 @@
 {% set name = "tifffile" %}
-{% set version = "2020.6.3" %}
-{% set sha256 = "e79403a8b98b0df7ade8d43469151b959fd56239001471fac62beabca6f56377" %}
+{% set version = "2020.7.4" %}
+{% set sha256 = "d7e56b9983e2e14716feaee560022baa8f92e97f36df7eee8b10e672383f694c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
