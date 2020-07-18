@@ -32,7 +32,7 @@ test:
     - tifffile
 
 about:
-  home: https://github.com/blink1073/tifffile
+  home: https://github.com/cgohlke/tifffile
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
