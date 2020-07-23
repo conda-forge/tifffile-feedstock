@@ -1,7 +1,7 @@
 About tifffile
 ==============
 
-Home: https://github.com/blink1073/tifffile
+Home: https://github.com/cgohlke/tifffile
 
 Package license: BSD-3-Clause
 
