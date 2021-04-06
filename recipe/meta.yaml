@@ -1,6 +1,6 @@
 {% set name = "tifffile" %}
-{% set version = "2021.3.17" %}
-{% set sha256 = "1b72c92ecd2273e52686c0f8792d1d1c4da4109b241dd1723dfe56ef4d1ad612" %}
+{% set version = "2021.3.31" %}
+{% set sha256 = "3a966053e09a89317e6c9bdf99db4bf5c4d3d611ca8ac455024d7824ea5772b3" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.7
     - numpy >=1.15.1
-    - imagecodecs >=2021.1.11
+    - imagecodecs >=2021.3.31
 
 test:
   imports:
