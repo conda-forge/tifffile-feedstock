@@ -1,6 +1,6 @@
 {% set name = "tifffile" %}
-{% set version = "2021.8.30" %}
-{% set sha256 = "8760e61e30106ea0dab9ec42a238d70a3ff55dde9c54456e7b748fe717cb782d" %}
+{% set version = "2021.10.10" %}
+{% set sha256 = "86c11d33d8101fcb9bec04d2c342982742d11e2a5a8cc770fbbcd4733bdba76a" %}
 
 package:
   name: {{ name|lower }}
