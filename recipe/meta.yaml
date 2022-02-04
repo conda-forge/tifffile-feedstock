@@ -1,6 +1,6 @@
 {% set name = "tifffile" %}
-{% set version = "2021.11.2" %}
-{% set sha256 = "153e31fa1d892f482fabb2ae9f2561fa429ee42d01a6f67e58cee13637d9285b" %}
+{% set version = "2022.2.2" %}
+{% set sha256 = "c4ff0ed150803c1dc2ab4b762049c43ea649202b33194309499e1edfee9523b9" %}
 
 package:
   name: {{ name|lower }}
@@ -24,8 +24,10 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - numpy >=1.15.1
-    - imagecodecs >=2021.7.30
+    - numpy >=1.19.2
+    - imagecodecs >=2021.11.20
+  run_constrained:
+    - matplotlib-base >=3.3
 
 test:
   imports:
