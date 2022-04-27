@@ -1,6 +1,6 @@
 {% set name = "tifffile" %}
-{% set version = "2022.4.22" %}
-{% set sha256 = "2b8003c834883103131bd3e97388091b59a3a2344e9d8e1ed48aebeb64f86763" %}
+{% set version = "2022.4.26" %}
+{% set sha256 = "018054f54b3c2fc06842b224077d059340309addfcd94263988c05d7f19724e9" %}
 
 package:
   name: {{ name|lower }}
@@ -20,10 +20,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - numpy >=1.19.2
     - imagecodecs >=2021.11.20
   run_constrained:
