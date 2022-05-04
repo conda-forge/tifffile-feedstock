@@ -1,6 +1,5 @@
 {% set name = "tifffile" %}
-{% set version = "2022.4.28" %}
-{% set sha256 = "52d86c507a3cf8f2fd93c1095d52137f273858d5d44af2834921b6944f00e8dc" %}
+{% set version = "2022.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: b03147a15862b7c1d90d47435197f149bef7a52c25ad67cf1f9b465faa71b8d2
 
 build:
   number: 0
@@ -16,6 +15,8 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tifffile = tifffile:main
+    - tiffcomment = tifffile.tiffcomment:main
+    - tiff2fsspec = tifffile.tiff2fsspec:main
     - lsm2bin = tifffile.lsm2bin:main
 
 requirements:
@@ -32,6 +33,13 @@ requirements:
 test:
   imports:
     - tifffile
+  commands:
+    - pip check
+    - tifffile --help
+    - tiffcomment --help
+    - tiff2fsspec --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/cgohlke/tifffile
