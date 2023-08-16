@@ -10,7 +10,7 @@ source:
   sha256: 824956b6d974b9d346aae59932bea862a2ad18fcc2b1a820b6941b7f6ddb2bca
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.9
     - numpy >=1.19.2
-    - imagecodecs >=2023.1.23
+    - imagecodecs >=2023.7.10
   run_constrained:
     - matplotlib-base >=3.3
 
