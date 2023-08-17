@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.9
     - numpy >=1.19.2
-    - imagecodecs >=2023.7.10
+    - imagecodecs >=2023.8.12
   run_constrained:
     - matplotlib-base >=3.3
 
