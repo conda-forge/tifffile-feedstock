@@ -21,10 +21,10 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - pip
   run:
-    - python >=3.9
+    - python >=3.10
     - numpy >=1.19.2
     - imagecodecs >=2023.8.12
   run_constrained:
