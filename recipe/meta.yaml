@@ -28,9 +28,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.19.2
-    - imagecodecs >=2023.8.12
+    - imagecodecs >=2024.12.30
   run_constrained:
     - matplotlib-base >=3.3
+    - zarr <3
 
 test:
   imports:
