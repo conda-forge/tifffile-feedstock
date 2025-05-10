@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "tifffile" %}
-{% set version = "2025.3.30" %}
+{% set version = "2025.5.10" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,11 @@ requirements:
     - imagecodecs >=2024.12.30
   run_constrained:
     - matplotlib-base >=3.3
-    - zarr <3
+    # zarr3 will now raise a value error
+    # those that need tifffile+zarr3 can
+    # install the corrrect combination
+    # https://github.com/cgohlke/tifffile/pull/296#issuecomment-2869132445
+    # - zarr <3
 
 test:
   imports:
@@ -43,6 +47,9 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    # Test that pip check and imports still work with
+    # (unsupported) zarr3
+    - zarr >=3
 
 about:
   home: https://github.com/cgohlke/tifffile
