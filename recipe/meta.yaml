@@ -46,13 +46,7 @@ test:
     - tiff2fsspec --help
   requires:
     - pip
-    # - python {{ python_min }}
-    # In this case we want to test for compatibility with pip check and zarr 3
-    # therefore we move away from the standard {{ python_min }} test at conda-forge
-    - python 3.11
-    # Test that pip check and imports still work with
-    # (unsupported) zarr3
-    - zarr >=3
+    - python {{ python_min }}
 
 about:
   home: https://github.com/cgohlke/tifffile
