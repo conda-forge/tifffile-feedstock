@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "tifffile" %}
-{% set version = "2025.9.20" %}
+{% set version = "2025.9.30" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a0fed4c613ff728979cb6abfd40832b6f36dc9da8183e52840418a25a00552eb
+  sha256: 1a259f11e94489a9ab599e4e9f40a0e72b17cad206587097209f630768dfcdf3
 
 build:
   number: 0
