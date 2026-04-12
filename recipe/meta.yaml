@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "tifffile" %}
 {% set version = "2026.4.11" %}
 
@@ -27,8 +27,8 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.19.2
-    - imagecodecs >=2025.11.11
+    - numpy >=2.0
+    - imagecodecs >=2026.3.6
   run_constrained:
     - matplotlib-base >=3.3
     # zarr3 will now raise a value error
