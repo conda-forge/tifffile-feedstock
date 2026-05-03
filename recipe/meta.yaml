@@ -27,7 +27,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=2.0
+    - numpy >=2.1
     - imagecodecs >=2026.3.6
   run_constrained:
     - matplotlib-base >=3.3
