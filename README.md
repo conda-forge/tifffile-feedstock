@@ -3,11 +3,13 @@ About tifffile-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tifffile-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/cgohlke/tifffile
+Home: https://www.cgohlke.com/
 
 Package license: BSD-3-Clause
 
-Summary: Read and write image data from and to TIFF files.
+Summary: Read and write TIFF files
+
+Documentation: https://www.cgohlke.com/docs/tifffile/
 
 Current build status
 ====================
