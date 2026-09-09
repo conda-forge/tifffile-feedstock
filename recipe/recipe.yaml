@@ -1,8 +1,8 @@
 schema_version: 1
 
 context:
-  python_min: "3.12"
-  version: "2026.8.23"
+  python_min: '3.12'
+  version: 2026.9.9
 
 package:
   name: tifffile
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tifffile/tifffile-${{ version }}.tar.gz
-  sha256: bd3c816f166f85c93329a54a0c9a1eccc9968a6a78f91d63b65d7b17675915f2
+  sha256: 5e5a0dfa16e6376bf062bc46e21b896fbfe895fcb47559af9c64b9b2d77bb4a0
 
 build:
   number: 0
@@ -31,7 +31,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy >=2.1
-    - imagecodecs >=2026.5.10
   run_constraints:
     - matplotlib-base >=3.3
     # zarr3 will now raise a value error
@@ -47,7 +46,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - requirements:
       run:
         - pip
