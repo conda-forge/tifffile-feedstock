@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: '3.12'
-  version: "2026.9.20"
+  version: "2026.10.15"
 
 package:
   name: tifffile
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tifffile/tifffile-${{ version }}.tar.gz
-  sha256: 30e145a7042ce7143ae50a50fe8b7221b0070aae22adab8f9e79a264be6b5cdc
+  sha256: a5ee666dbd6d62e059830a3450825a2521a981b3f45c07a80ab009484aef56f0
 
 build:
   number: 0
